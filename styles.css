@@ -1,0 +1,132 @@
+body {
+  background: #eee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.keyboard {
+  background: #eeeeee;
+  background: -moz-linear-gradient(top, #eeeeee 0%, #d1d5d8 5%, #d1d5d8 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #eeeeee),
+    color-stop(5%, #d1d5d8),
+    color-stop(100%, #d1d5d8)
+  );
+  background: -webkit-linear-gradient(
+    top,
+    #eeeeee 0%,
+    #d1d5d8 5%,
+    #d1d5d8 100%
+  );
+  background: -o-linear-gradient(top, #eeeeee 0%, #d1d5d8 5%, #d1d5d8 100%);
+  background: -ms-linear-gradient(top, #eeeeee 0%, #d1d5d8 5%, #d1d5d8 100%);
+  background: linear-gradient(to bottom, #eeeeee 0%, #d1d5d8 5%, #d1d5d8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#d1d5d8',GradientType=0 );
+  width: 632px;
+  height: 288px;
+  box-shadow: 1px 1px 1px #a9a9a9, 0 0 1px 1px #a9a9a9;
+  border-radius: 0 0 10px 10px;
+  margin: 50vh auto 0;
+  padding: 30px 10px 10px;
+  position: relative;
+  overflow: auto;
+  top: -144px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  clear: both;
+  &.functions li {
+    width: 40px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 7px;
+  }
+  &.commands li {
+    height: 44px;
+    line-height: 56px;
+    &.arrow {
+      height: 22px;
+      margin: 0 2px;
+      &.top {
+        margin: 0 44px 2px;
+      }
+    }
+  }
+}
+
+li {
+  float: left;
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #ffffff 0%, #f0f0f0 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #ffffff),
+    color-stop(100%, #f0f0f0)
+  );
+  background: -webkit-linear-gradient(top, #ffffff 0%, #f0f0f0 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #f0f0f0 100%);
+  background: -ms-linear-gradient(top, #ffffff 0%, #f0f0f0 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #f0f0f0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f0f0f0',GradientType=0 );
+  box-shadow: inset 0 0 2px #fff;
+  border: 1px solid #8f8f8f;
+  border-radius: 5px;
+  width: 38px;
+  height: 38px;
+  overflow: hidden;
+  line-height: 32px;
+  font-size: 11px;
+  color: #a6a6a6;
+  margin: 3px 2px;
+  padding: 5px;
+  text-align: center;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  &.command {
+    width: 52px;
+  }
+  &.delete,
+  &.tab {
+    width: 66px;
+  }
+  &.caps,
+  &.return {
+    width: 73px;
+  }
+  &.shift {
+    width: 94px;
+  }
+  &.space {
+    width: 204px;
+  }
+  &.delete,
+  &.shift,
+  &.return,
+  &.option,
+  &.command,
+  &.control,
+  &.fn,
+  &.tab,
+  &.caps {
+    text-align: right;
+    line-height: 46px;
+    font-size: 9px;
+  }
+  &.left {
+    text-align: left;
+  }
+}
